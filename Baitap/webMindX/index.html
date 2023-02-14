@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuyển ngành lập trình từ con số 0, không gì là không thể.</title>
+    <link rel="icon" href="data:image/png;base64,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">
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="data:image/png;base64,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"  alt="mindx" width="200" height="100">
+        <nav>
+            <ul>
+                <li>Tổng hợp khóa học</li>
+                <li>Sản phẩm học viên</li>
+                <li> <a href="">Câu chuyện học viên</a></li>
+                <li> <a href="">Blog</a></li>
+                <li> <a href="">Sự kiện</a></li>
+                <li><a href="">Về Chúng tôi</a></li>
+                <li>VN</li>
+                <li>EN</li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <img src="https://resources.mindx.edu.vn/uploads/images/164243145_1879127655595491_2163594297157166535_n-720.jpg" alt="" width="100%" height="300">
+    <h1>Chuyển ngành lập trình từ con số 0, không gì là không thể!</h1>
+    <div class="profile">
+    <p>Diệu  Hương</p>
+    <p>01/11/2021 | 2321 lượt xem</p>
+    <p>Lập Trình Cho Người Mới Bắt Đầu, Định Hướng Ngành CNTT</p>
+    </div>
+     
+    <div>
+        <h1>26 tuổi thất nghiệp vì Covid và bước ngoặt chuyển ngành lập trình từ con số 0...</h1>
+        <p>2020, thất nghiệp vì Covid và mất định hướng ở tuổi 26 là những gì mà anh Kiên - một học viên đặc biệt của MindX đã trải qua. Nhưng sau tất cả, đây chính là bước ngoặt lớn của cuộc đời, bỏ lại những kiến thức, kinh nghiệm đã tích lũy để bắt đầu theo đuổi công nghệ thông tin từ con số 0.
+
+        <br> Hãy cùng MindX lắng nghe những chia sẻ của anh Hà Trung Kiên ngay sau đây nhé:</p>
+
+            <h2>1. Con đường đến với lập trình của anh như thế nào?</h2>
+            <p>"Mình tên là Kiên, năm nay mình 27 tuổi, mình học ngành kỹ thuật công trình ở Đại học xây dựng. Tuy nhiên, đến năm thứ 4 thì mình bỏ ngang vì cảm thấy không phù hợp và chuyển qua dạy tiếng Anh, sau đó thì mình lại chuyển qua dẫn tour du lịch.</p>
+            <p>Đến đầu năm 2020, dịch Covid 19 bùng phát thì mình chính thức thất nghiệp. Lúc đó, mình bắt đầu hoang mang, mất định hướng và phải tìm con đường đi mới. Sau khi cân nhắc, mình thấy lập trình viên là ngành có tiềm năng, ổn định và ít bị ảnh hưởng nhất nên mình đã quyết định theo đuổi.</p>
+            <img src="https://resources.mindx.edu.vn/uploads/images/164243145_1879127655595491_2163594297157166535_n-720.jpg" alt="" width="100%" height="300">
+            <p>"Thật ra thì mình mới tốt nghiệp trường xây dựng cuối năm 2020 thôi. Khi quyết định chuyển sang lập trình, mình cũng có tìm hiểu và được MindX tư vấn rằng muốn sang nước ngoài thì phải có bằng đại học. Từ đó, mình mới quay lại học tiếp để lấy bằng, chứ lúc đầu mình định bỏ luôn rồi "</p>
+
+            <h2>2. Chuyển ngành ở độ tuổi không còn trẻ chắc anh cũng gặp không ít khó khăn? Động lực nào giúp anh nỗ lực và cố gắng để theo đuổi đến cùng?</h2>
+            <p>"Mình cũng lo lắng và hoang mang khi bắt đầu vì nghĩ các bạn sinh viên đã học từ năm 18 tuổi, mình làm sao mà theo được. Tuy nhiên, học đến đâu thì mình cũng hiểu đến đó nên cũng có chút niềm tin là mình hợp với lập trình. Mình đầu tư rất nhiều thời gian để học lập trình, gần như là lúc nào cũng học luôn đó. Mình code đến 12 tiếng mỗi ngày, có đợt làm project mình ngủ chỉ 4 tiếng/ ngày, thời gian còn lại làm project hết.</p>
+            <p>Ngoài ra, mình nghĩ MindX cũng giúp mình tự tin hơn rất nhiều đấy. Vì có cam kết đầu ra nên mình cứ bám vào đó và học theo thôi, không phải lo lắng gì cả, nhưng mà chưa cần hết lộ trình, sau có 2 khóa học là mình có việc làm đầu tiên luôn rồi "</p>
+            <h3>- Mất bao lâu thì anh tìm được công việc đầu tiên trong ngành này?</h3>
+            <p>"Công việc đầu tiên tại Nexttech - đối tác của MindX, mình được offer qua MindX Job Fair. Lúc đó mình mới kết thúc khóa 2, chưa xác định là đi làm vì chưa có đủ kinh nghiệm và kiến thức, nhưng cũng may là hồi đó tham gia sự kiện của MindX và phỏng vấn thử, cơ hội đến thì mình nắm bắt thôi.</p>
+            <p>Sau một thời gian thì mình chuyển công ty, hiện tại mình đang làm tại CMC Global với mức lương gấp đôi công ty cũ. Đây là thành tựu nho nhỏ mà chính mình cũng không nghĩ sẽ đạt được nhanh đến như vậy."</p>
+            <h3>- MindX có giúp anh chinh phục giấc mơ công nghệ dễ dàng hơn?</h3>
+            <p>"Bây giờ thì không cần lo nhưng trước đó mình cũng thấy cảm ơn MindX, giảng viên thì nhiệt tình, cả 3 lớp đều rất nhiệt tình, support kể cả ngoài giờ học cũng tốt, trình độ chuyên môn giỏi. Bên cạnh đó, cộng đồng của MindX khá tốt, môi trường ổn, có nhiều sự kiện như MindX Job Fair và Hackathon cũng khá là hay, giúp mình có thêm nhiều cơ hội thử thách bản thân và tìm cơ hội hơn."</p>
+            <h3>- Nếu được quay lại khi 18 tuổi, anh nghĩ mình sẽ có những quyết định gì</h3>
+            <img src="https://resources.mindx.edu.vn/uploads/images/Ha%CC%80%20Trung%20Kie%CC%82n%20Ho%CC%A3c%20vie%CC%82n%20tie%CC%82u%20bie%CC%82%CC%89u-%20MindX%20.png" alt="">
+            <p><b>"Nếu được quay lại, mình sẽ học lập trình sớm hơn, từ cấp 3 luôn chứ không phải đại học. Cấp 3 thi đại học xong thì năm đầu tiên mình sẽ đi làm, đi thực tập luôn vì ngành CNTT đi thực tập, đi làm dễ lắm do mình đã chuẩn bị từ cấp 3 rồi mà. Sau khi tốt nghiệp đại học là mình đã có 4 năm kinh nghiệm, có thể bây giờ đã trở thành 1 Global Developer rồi. Tuy nhiên, đi đường vòng cũng không sao, thành công đến muộn chút nhưng cũng cho mình những trải nghiệm thú vị."</b></p>
+            <p><b>------------------------------------------------</b></p>
+            <p>Từ con số 0 tròn trĩnh, Kiên đã đạt được những quả ngọt đầu tiên, với sự cố gắng vô cùng. MindX vẫn nhớ những ấn tượng đặc biệt khi gặp anh tại buổi Hackathon, với vai trò 1 trong 3 ông chú - nhóm có thể coi là nhiều tuổi nhất nhưng máu me cũng nhất nhì, cũng code xuyên đêm, đói ăn mì tôm, chè cô Bân ở căng tin bán. Cuối buổi, anh cũng là 1 trong những người duy nhất ở lại hỗ trợ team kê lại bàn ghế, dù mình biết thức đêm như thế ai cũng mỏi lắm rồi.</p>
+            <p>Gặp lại ở hôm Job fair, vẫn mái tóc xuề xoà đó, Kiên chạy ra mượn bọn mình laptop để demo cho các nhà tuyển dụng :)), chạy đôn đáo qua lại các booth không bỏ lỡ bất kì cơ hội nào.</p>
+            <p>Bạn thấy đó cơ hội trong ngành này rất nhiều. Miễn có đủ quyết tâm, đủ nỗ lực. MindX không tiện public mức thu nhập của bạn, tuy nhiên mình tin đây cũng là 1 con số đáng kể mà nếu Kiên không liều 1 chút chuyển ngành thì không dễ để đạt tới.</p>
+            <p>Và Kiên chỉ là 1 trong số vô vàn bạn đang học tập, cố gắng ở đây thôi! Người ta làm được, sao bạn lại không nhỉ ? Tìm hiểu về các khóa học của MindX <a href="https://mindx.edu.vn/study-program/khoa-hoc-lap-trinh-tu-co-ban-toi-nang-cao">tại đây</a>  </p>
+
+            <h3>Đừng quên chia sẻ với bạn bè nhé!</h3>
+            <hr>
+             
+            <section>
+                <div>
+                    <img src="https://resources.mindx.edu.vn/uploads/images/1%20-320.png" alt="">
+                    <p><a href="">Mở đăng ký workshop: “Đón đầu cơ hội 2023 - Cùng con khám phá và </a></p>
+                </div>
+                <div>
+                    <img src="https://resources.mindx.edu.vn/uploads/images/Artboard%202%20copy%203-320.png" alt="">
+                    <p><a href="">Nguyễn Văn Ba - Hành trình trở thành lập trình viên quốc tế của c</a></p>
+                </div>
+                <div>
+                    <img src="https://resources.mindx.edu.vn/uploads/images/Cover-event-%C4%90%C3%B3n-%C4%91%E1%BA%A7u-c%C6%A1-h%E1%BB%99i-2023-320.png" alt="">
+                    <p><a href="">Kêu gọi đăng ký tham dự cuộc thi "Học sinh, sinh viên với ý tưởng khởi nghiệp" lần thứ V</a></p>
+                </div>
+            </section>
+    </div>
+
+    <footer >
+            <img src="data:image/png;base64,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"  alt="mindx" width="200" height="100">
+            <p><b>Về mindX</b></p>
+            <ul>
+                <li><a href="">Blog công nghệ</a></li>
+                <li><a href="">Về chúng tôi</a></li>
+                <li><a href="">Tuyển dụng</a></li>
+            </ul>
+
+            <p><b>Chương trình học</b></p>
+            <ul>
+                <li><a href="">Code for Kids</a></li>
+                <li><a href="">Code for Teen</a></li>
+                <li><a href="">CHO SINH VIÊN VÀ NGƯỜI ĐI LÀM</a></li>
+            </ul>
+
+            <p><b>Hotline</b></p>
+            <ul>
+                <li><a href="">Khóa học khối Adults: 02477705666</a></li>
+                <li><a href="">Khóa học KidTeen Hà Nội: 02477717888</a></li>
+                <li><a href="">Khóa học KidTeen HCM: 02877717789</a></li>
+                <li><a href="">Khóa học khối Online: 02477708666</a></li>
+                <li><a href="">Khóa học khối MultiMedia: 02477731666</a></li>
+                <li><a href="">Hợp tác truyền thông: 02477703666</a></li>
+                <li><a href="">Hợp tác kinh doanh: 0915111228</a></li>
+                <li><a href="">Khiếu nại dịch vụ CSKH: 02477710666 hoặc 0823102777</a></li>
+                <li><a href="">Các khóa cho học sinh cấp 1 đến cấp 3: Xem chi tiết ở dưới</a></li>
+            </ul>
+
+            <h4>Tỉnh khác</h4>
+            <p>MindX - Online</p>
+            <p>Hotline: 02477717888</p>
+            <p>Địa chỉ: Học Online</p>
+
+            <H4>Hà Nội</H4>
+        <div>
+            <div>
+                <p>HN - 22C Thành Công (Dành riêng cho sinh viên, người đi làm)</p>
+                <p>Hotline: 02477705666</p>
+                <p>Địa chỉ: Tầng 6, Tòa nhà Chigamex 22C Thành Công, Phường Thành Công, Quận Ba Đình, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - Long Biên</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Số 8, Shophouse Nguyệt Quế 25, Vinhomes Riverside, Phường Phúc Đồng, Quận Long Biên, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - 176 Định Công</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: CenX Định Công, Tầng 3, Tháp B1 Toà nhà Sky Central, 176 Định Công, Phường Định Công, Quận Hoàng Mai, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - 29T1 Hoàng Đạo Thúy</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Tầng 2, 29T1 Hoàng Đạo Thuý, Phường Trung Hòa, Quận Cầu Giấy, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - 505 Minh Khai</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Y-Nest Coworking Space, Tầng 4, Số 505 Minh Khai, Phường Vĩnh Tuy, Quận Hai Bà Trưng, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - 03 Lương Yên</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: CenX Sun Acora, Tầng 4, Toà nhà Sun Plaza Ancora, Số 3 Lương Yên, Phường Bạch Đằng, Quận Hai Bà Trưng, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - 107 Nguyễn Phong Sắc/p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Tầng 6, Tòa AZ Lâm Viên, 107 Nguyễn Phong Sắc, Phường Dịch Vọng Hậu, Quận Cầu Giấy, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - 102 Trần Phú</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Tòa C Tầng 12, Toà Hồ Gươm Plaza, Số 102 Trần Phú, Phường Mộ Lao, Quận Hà Đông, Hà Nội</p>
+            </div>
+            <div>
+                <p>MindX - Online</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Học Online</p>
+            </div>
+            <div>
+                <p>HN - 71 Nguyễn Chí Thanh (Trụ sở chính)</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Tầng 5, 71 Nguyễn Chí Thanh, Phường Láng Hạ, Quận Đống Đa, Hà Nội</p>
+            </div>
+            <div>
+                <p>HN - 06 Nguyễn Hoàng</p>
+                <p>Hotline: 02477717888</p>
+                <p>Địa chỉ: Tầng 3, Tòa nhà Dolphin Plaza, Số 06 Nguyễn Hoàng, Phường Trần Bình, Quận Nam Từ Liêm, Hà Nội</p>
+            </div>
+        </div>
+            <h4>Hồ Chí Minh</h4>
+            <div>
+                <div>
+                    <p>HCM - 02 Song Hành</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 2, Số 2 Song Hành, Phường An Phú, Quận 2, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 174 Tên Lửa</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: 174 đường số 1 KĐT Tên Lửa, Phường Bình Trị Đông B, Quận Bình Tân, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 414 Lũy Bán Bích</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 3 và 4, 414 Luỹ Bán Bích, Phường Hòa Thạnh, Quận Tân Phú, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 624 Lạc Long Quân</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 2, Toà nhà Khải Hoàn, 624 Lạc Long Quân, Phường 15, Quận 11, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 268 Lý Thường Kiệt</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: UPGen Đại học Bách khoa - 268 Lý Thường Kiệt, Phường 14, Quận 10, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 366 Nguyễn Trãi</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: tầng trệt, số 366 Nguyễn Trãi, Phường 8, Quận 5, Thành phố Hồ Chí Minh</p>
+                </div>
+                <div>
+                    <p>HCM - Phan Văn Trị</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Số 672A28 Phan Văn Trị, Phường 10, Quận Gò Vấp, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 22-24 Ung Văn Khiêm</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: 22-24 Ung Văn Khiêm, Phường 25, Quận Bình Thạnh, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 01 Tô Ký</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 4, Toà nhà Genpacific (Cổng vào Công Viên Phần Mềm Quang Trung), 1 Tô Ký, phường Tân Chánh Hiệp, Quận 12, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 01 Quang Trung (Khai trương tháng 9)</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 1, số 1 Quang Trung, phường 10, Quận Gò Vấp (ngã 6 Gò Vấp), TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 618 Đường 3/2</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu trệt và lầu 2, 618 đường 3/2, Phường 14, Quận 10, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 343 Phạm Ngũ Lão</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 9, Tòa nhà International Plaza, Số 343 Phạm Ngũ Lão, Quận 1, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 261-263 Phan Xích Long</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 8, Tòa nhà Nam Giao, 261-263 Phan Xích Long, Phường 2, Quận Phú Nhuận, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 223 Nguyễn Xí</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu trệt và lầu 1, 223 Nguyễn Xí, Phường 13, Quận Bình Thạnh, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 01 Trường Chinh</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 2, Toà nhà Sách Nhân Văn, 1 Trường Chinh, Phường 11, Quận Tân Bình, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 322 Tây Thạnh</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 3 Toà nhà Đông Nam, 322 Tây Thạnh (ngã giao Tây Thạnh - Lê Trọng Tấn), Quận Tân Phú, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - Phú Mỹ Hưng</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Số 490 Phạm Thái Bường, KĐT Phú Mỹ Hưng, Phường Tân Phong, Quận 7, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 165-167 Nguyễn Thị Thập</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: 165-167 Nguyễn Thị Thập, KĐT Him Lam (Đối diện khu vui chơi Vietopia), Phường Tân Hưng, Quận 7, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 39 Hải Thượng Lãn Ông</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu trệt và lầu 1, 39 Hải Thượng Lãn Ông, Phường 10, Quận 5, TP HCM</p>
+                </div>
+                <div>
+                    <p>HCM - 20 Cộng Hòa</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Lầu 2, (Chung cư Cộng Hoà garden) 20 Cộng Hòa, Phường 12, Quận Tân Bình, TP HCM</p>
+                </div>
+                <div>
+                    <p>MindX - Online</p>
+                    <p>Hotline: 02877717789</p>
+                    <p>Địa chỉ: Học Online</p>
+                </div>
+            </div>
+
+            <p>CÔNG TY CỔ PHẦN TRƯỜNG HỌC CÔNG NGHỆ MINDX. Mã số thuế: 0110021468 Địa chỉ: Tầng 2, Tòa 29T1 Hoàng Đạo Thúy, Phường Trung Hoà, Quận Cầu Giấy, Thành phố Hà Nội, Việt Nam</p>
+
+    </footer>
+
+</body>
+</html>

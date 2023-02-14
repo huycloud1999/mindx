@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="logo"><a href=""><img src="" alt=""></a></div>
+        <div class="heder-right">
+            <div class="international">
+                <div class="international-logo"></div>
+                <a href="" class="international-text"></a>
+            </div>
+            <div class="weather"></div>
+            <div class="login"> 
+                <a href="" class="login-text"></a>
+                <img src="" alt="" class="icon">
+            </div>
+            <div class="search"><a href="" class="icon-search"></a>
+            </div>
+        </div>
+    </header>
+    <nav class="menu">
+       <ul>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+       </ul>
+    </nav>
+    <div class="content-1"></div>
+    <div class="content-2"></div>
+    <footer></footer>
+</html>
